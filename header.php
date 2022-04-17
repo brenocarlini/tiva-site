@@ -115,8 +115,8 @@
 
                             <div class="col-md-6 match-times d-flex align-items-center pt-3 pb-3">
 
-                                <h6 class="fw700 text-gold text-uppercase">CTE</h6>
-                                <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/cte.png" class="pl-3 pr-3">
+                                <h6 class="fw700 text-gold text-uppercase">SPO</h6>
+                                <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/sport.png" class="pl-3 pr-3">
                                 
                                 <h6 class="fw200 text-white text-uppercase">X</h6>
 
@@ -130,19 +130,20 @@
                                 <div class="d-flex flex-column">
 
                                     <span class="fw800 text-gold text-uppercase small">
-                                        <strong>CAMPEONATO CAPIXABA 2022</strong>
+                                        <strong>COPA ES 2022</strong>
                                     </span>
 
                                     <span class="text-white text-uppercase small">
-                                        <strong>CTE Colatina x DESPORTIVA</strong>
+                                        <strong>Sport x DESPORTIVA</strong>
                                     </span>
 
                                     <span class="text-white small text-uppercase">
-                                        25.02.2022 &mdash; SEX &mdash; 18h00
+                                        21.05.2022 &mdash; SAB &mdash; 15h00
                                     </span>
 
                                     <span class="text-white small">
-                                        Estádio Justiniano Melo e Silva, Colatina/ES
+                                        À definir
+                                        <!-- Estádio Justiniano Melo e Silva, Colatina/ES -->
                                     </span>
 
                                 </div>

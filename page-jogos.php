@@ -23,8 +23,8 @@
 
 						<div class="col-md-2 col-3">
 							<div class="date d-flex flex-column justify-content-center">
-								<h2 class="text-uppercase fw800">12</h2>
-								<h5 class="text-uppercase">fev</h5>
+								<h2 class="text-uppercase fw800">21</h2>
+								<h5 class="text-uppercase">mai</h5>
 								<p class="text-uppercase fw800">sab</p>
 							</div>
 						</div>
@@ -32,14 +32,14 @@
 						<div class="col-md-10 col-9">
 							<div class="card-body">
 
-								<p class="card-title">Campeonato Capixaba 2022</p>
-								<p class="card-match"><small class="text-muted">3ª Rodada</small></p>
+								<p class="card-title">Copa ES 2022</p>
+								<p class="card-match"><small class="text-muted">1ª Rodada</small></p>
 
 								<div class="teams d-flex justify-content-between align-items-center">
 
 									<div class="text-center">
-										<img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/serra.png" class="club">
-										<p class="team">Serra</p>
+										<img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/sport.png" class="club">
+										<p class="team">Sport</p>
 									</div>
 
 									<h4 class="fw200 vs">x</h4>
@@ -52,7 +52,7 @@
 								</div>
 
 								<p class="card-hour"><strong class="text-muted">15h00</strong></p>
-								<p class="card-local"><small class="text-muted">Estádio Robertão, Serra/ES</small></p>
+								<p class="card-local"><small class="text-muted">À definir</small></p>
 
 							</div>
 						</div>
@@ -60,13 +60,7 @@
 					</div>
 				</div>
 				
-				
-				
-				<!-- FIM QUADRO JOGO -->
-
-                
-
-                <!-- <p class="text-center mb-5">Sem informações no momento</p> -->
+				<!-- FIM QUADRO JOGO -->                
 
                 <br>
 				<br>
@@ -81,7 +75,7 @@
                 </div>
                 
 
-                <?php require_once get_template_directory()."/pages/2022/campeonato-capixaba.php"; ?>
+                <?php require_once get_template_directory()."/pages/2022/copa-es.php"; ?>
 
             
             </div>
