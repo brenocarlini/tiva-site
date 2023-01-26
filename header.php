@@ -11,10 +11,28 @@
 
             gtag('config', 'UA-169352200-1');
         </script>
+		
+		<!-- Meta Pixel Code -->
+		<script>
+			!function(f,b,e,v,n,t,s)
+			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+				n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			 n.queue=[];t=b.createElement(e);t.async=!0;
+			 t.src=v;s=b.getElementsByTagName(e)[0];
+			 s.parentNode.insertBefore(t,s)}(window, document,'script',
+											 'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '638814091369546');
+			fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+					   src="https://www.facebook.com/tr?id=638814091369546&ev=PageView&noscript=1"
+					   /></noscript>
+		<!-- End Meta Pixel Code -->
         
         <?php wp_head(); ?>
 
-        <meta name="facebook-domain-verification" content="tll2j85i5xkeu41pg1m9gtc5f5kgq4" />
+		<meta name="facebook-domain-verification" content="tto0xcet3s8qcwhom3b8murvtp1bw6" />
 
         <meta charset="<?php bloginfo( 'charset' ); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -44,8 +62,8 @@
 
     <body class="d-flex flex-column align-items-stretch">
 
-        <a href="http://socioloucoportiva.com.br" target="_blank" id="sociotiva" class="btn btn-gold btn-lg">
-            <i class="fas fa-id-card mr-2"></i> Seja Sócio
+        <a href="https://tiva63.com.br" target="_blank" id="sociotiva" class="btn btn-gold btn-lg">
+            <i class="fas fa-shopping-cart"></i> Nossa Loja
         </a>
 
         <?php
@@ -67,41 +85,43 @@
         
             <nav class="navbar navbar-expand-lg" id="nav">
 
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="navbar-brand">
-                    <div class="d-flex align-items-center">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/logo-small.png" alt="">
-                        <div class="lh-100 text-white brand-title">
-                            <span class="brand-title-line text-uppercase"><small>ASSOCIAÇÃO</small></span>
-                            <span class="brand-title-line text-uppercase"><strong>DESPORTIVA</strong></span>
-                            <span class="brand-title-line text-uppercase"><small>FERROVIÁRIA</small></span>
+                <div class="container-fluid">
+
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="navbar-brand">
+                        <div class="d-flex align-items-center">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/logo-small.png" alt="">
+                            <div class="lh-100 text-white brand-title">
+                                <span class="brand-title-line text-uppercase"><small>ASSOCIAÇÃO</small></span>
+                                <span class="brand-title-line text-uppercase"><strong>DESPORTIVA</strong></span>
+                                <span class="brand-title-line text-uppercase"><small>FERROVIÁRIA</small></span>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-                <div class="navbar-collapse collapse" id="navbarCollapse">
-
-                    <div class="ml-auto">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                         <?php
                             wp_nav_menu( array(
                                 'theme_location'  => 'primary',
                                 'container'       => false,
-                                'container_id'    => 'navbarCollapse',
+                                'container_id'    => 'navbarSupportedContent',
                                 'container_class' => 'collapse navbar-collapse',
                                 'menu_id'         => false,
-                                'menu_class'      => 'navbar-nav ml-auto',
+                                'menu_class'      => 'navbar-nav ms-auto',
                                 'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
                                 'walker'          => new WP_Bootstrap_Navwalker(),
                             ) );
                         ?>
 
+                        
                     </div>
+
                 </div>
 
             </nav>
@@ -115,13 +135,13 @@
 
                             <div class="col-md-6 match-times d-flex align-items-center pt-3 pb-3">
 
-                                <h6 class="fw700 text-gold text-uppercase">SPO</h6>
-                                <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/sport.png" class="pl-3 pr-3">
+                                <h6 class="fw700 text-gold text-uppercase">DES</h6>
+                                <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/desportiva.png" class="ps-3 pe-3">
                                 
                                 <h6 class="fw200 text-white text-uppercase">X</h6>
 
-                                <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/desportiva.png" class="pl-3 pr-3">
-                                <h6 class="fw700 text-gold text-uppercase">DES</h6>
+                                <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/cai.png" class="ps-3 pe-3">
+                                <h6 class="fw700 text-gold text-uppercase">CAI</h6>
 
                             </div>
 
@@ -130,20 +150,19 @@
                                 <div class="d-flex flex-column">
 
                                     <span class="fw800 text-gold text-uppercase small">
-                                        <strong>COPA ES 2022</strong>
+                                        <strong>Capixabão 2023</strong>
                                     </span>
 
                                     <span class="text-white text-uppercase small">
-                                        <strong>Sport x DESPORTIVA</strong>
+                                        <strong>DESPORTIVA x Atl. Itapemirim</strong>
                                     </span>
 
                                     <span class="text-white small text-uppercase">
-                                        21.05.2022 &mdash; SAB &mdash; 15h00
+                                        29.01.2023 &mdash; dom &mdash; 10h
                                     </span>
 
                                     <span class="text-white small">
-                                        À definir
-                                        <!-- Estádio Justiniano Melo e Silva, Colatina/ES -->
+										Engenheiro Araripe, Cariacica/ES
                                     </span>
 
                                 </div>

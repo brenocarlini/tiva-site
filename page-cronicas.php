@@ -14,7 +14,7 @@
                             $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                             $posts_per_page = 12;
 
-                            $args = array(
+                            $argsChronicles = array(
                                 'post_type'       => 'cronicas',
                                 'posts_per_page'      => $posts_per_page,
                                 'orderby'             => 'date',
@@ -22,12 +22,12 @@
                                 'paged'               => $paged,
                             );
 
-                            $the_query = new WP_Query($args);
+                            $allChronicles = new WP_Query($argsChronicles);
                         ?>
 
-                        <?php if ( $the_query->have_posts() ) : ?>
+                        <?php if ( $allChronicles->have_posts() ) : ?>
 
-                            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                            <?php while ( $allChronicles->have_posts() ) : $allChronicles->the_post(); ?>
 
                                 <div class="card">
                                     
@@ -65,11 +65,12 @@
 
                             <?php endwhile; ?>
 
-                            <div class="col-md-12 paginacao">
-                                <div class="d-flex justify-content-center">
-                                    <?php echo bootstrap_pagination($allNews); ?>
-                                </div>
-                            </div>  
+								
+									<div class="col-md-12 paginacao">
+										<div class="d-flex justify-content-center">
+											<?php echo bootstrap_pagination($allChronicles); ?>
+										</div>
+									</div>
 
                         <?php else : ?>
 
