@@ -12,7 +12,7 @@
                                 
                                 <ul class="sponsors-main">
                                     <!-- <li><a href="http://www.oralunic.com.br/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/sponsors/logo-oralunic.png" alt=""></a></li> -->
-                                    <li><a href="http://www.unimedvitoria.com.br/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/sponsors/logo-unimed.png" alt=""></a></li>
+                                    <!-- <li><a href="http://www.unimedvitoria.com.br/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/sponsors/logo-unimed.png" alt=""></a></li> -->
 									<li><a href="http://gruposimec.com.br/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/sponsors/logo-simec.png" alt=""></a></li>
                                     <li><a href="http://www.iconesports.com.br/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/sponsors/logo-icone.png" alt=""></a></li>
                                     <li><a href="https://www.extrabom.com.br/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/sponsors/logo-extrabom.png" alt=""></a></li>

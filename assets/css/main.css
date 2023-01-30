@@ -10919,9 +10919,9 @@ a {
   -webkit-transition: all 0.75s;
   transition: all 0.75s;
   color: inherit;
+  text-decoration-line: none;
 }
 a:hover {
-  text-decoration: none !important;
   color: #630820 !important;
 }
 
@@ -12600,7 +12600,7 @@ header {
   }
 }
 #single {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 #single h1, #single .h1, #single h2, #single .h2, #single h3, #single .h3, #single h4, #single .h4, #single h5, #single .h5, #single h6, #single .h6 {
   font-weight: 700;
@@ -12650,7 +12650,7 @@ header {
 
 @media (max-width: 991px) {
   #single {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   #single h2, #single .h2 {
     margin: 15px 0;
