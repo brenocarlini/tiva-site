@@ -135,13 +135,13 @@
 
                             <div class="col-md-6 match-times d-flex align-items-center pt-3 pb-3">
 
-                                <h6 class="fw700 text-gold text-uppercase">DES</h6>
-                                <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/desportiva.png" class="ps-3 pe-3">
+                                <h6 class="fw700 text-gold text-uppercase">rno</h6>
+                                <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/real-noroeste.png" class="ps-3 pe-3">
                                 
                                 <h6 class="fw200 text-white text-uppercase">X</h6>
 
-                                <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/cai.png" class="ps-3 pe-3">
-                                <h6 class="fw700 text-gold text-uppercase">CAI</h6>
+                                <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/desportiva.png" class="ps-3 pe-3">
+                                <h6 class="fw700 text-gold text-uppercase">des</h6>
 
                             </div>
 
@@ -154,15 +154,15 @@
                                     </span>
 
                                     <span class="text-white text-uppercase small">
-                                        <strong>DESPORTIVA x Atl. Itapemirim</strong>
+                                        <strong>real noroeste x desportiva</strong>
                                     </span>
 
                                     <span class="text-white small text-uppercase">
-                                        29.01.2023 &mdash; dom &mdash; 10h
+                                        01.02.2023 &mdash; qua &mdash; 20h
                                     </span>
 
                                     <span class="text-white small">
-										Engenheiro Araripe, Cariacica/ES
+										José Olímpio da Rocha, Águia Branca/ES
                                     </span>
 
                                 </div>
