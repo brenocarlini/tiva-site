@@ -135,8 +135,8 @@
 
                             <div class="col-md-6 match-times d-flex align-items-center pt-3 pb-3">
 
-                                <h6 class="fw700 text-gold text-uppercase">rno</h6>
-                                <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/real-noroeste.png" class="ps-3 pe-3">
+                                <h6 class="fw700 text-gold text-uppercase">ptv</h6>
+                                <img src="<?php bloginfo( 'template_url' ) ?>/assets/img/clubs/porto-vitoria.png" class="ps-3 pe-3">
                                 
                                 <h6 class="fw200 text-white text-uppercase">X</h6>
 
@@ -154,15 +154,15 @@
                                     </span>
 
                                     <span class="text-white text-uppercase small">
-                                        <strong>real noroeste x desportiva</strong>
+                                        <strong>porto vitória x desportiva</strong>
                                     </span>
 
                                     <span class="text-white small text-uppercase">
-                                        01.02.2023 &mdash; qua &mdash; 20h
+                                        07.02.2023 &mdash; ter &mdash; 19h
                                     </span>
 
                                     <span class="text-white small">
-										José Olímpio da Rocha, Águia Branca/ES
+										Kléber Andrade, Cariacica/ES
                                     </span>
 
                                 </div>
