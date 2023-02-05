@@ -98,24 +98,24 @@
                         </div>
                     </a>
 
-                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarScroll">
 
                         <?php
                             wp_nav_menu(array(
                                 'theme_location'  => 'primary',
                                 'container'       => false,
-                                'container_id'    => 'navbarSupportedContent',
-                                'container_class' => 'collapse navbar-collapse',
+                                'container_id'    => 'navbarScroll',
+                                //'container_class' => 'collapse navbar-collapse',
                                 'menu_id'         => false,
-                                // 'menu_class'      => 'navbar-nav ms-auto',
+                                //'menu_class'      => 'navbar-nav ms-auto',
                                 'fallback_cb'     => '__return_false',
-                                'items_wrap'      => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+                                'items_wrap'      => '<ul id="%1$s" class="navbar-nav navbar-nav-scroll ms-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
                                 'depth'           => 2,
                                 'walker'          => new bootstrap_5_wp_nav_menu_walker()
                             ));
