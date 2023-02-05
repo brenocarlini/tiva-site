@@ -1,18 +1,13 @@
 <?php
 
-// FORMATAÇÃO MENU
-// require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
-require_once get_template_directory() . '/inc/class-wp-bootstrap-pagination.php.php';
+// PAGINAÇÃO
+require_once get_template_directory() . '/inc/class-wp-bootstrap-pagination.php';
 
-function register_navwalker(){
-	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
-}
-add_action( 'after_setup_theme', 'register_navwalker' );
-if ( ! file_exists( get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php' ) ) {
-    return new WP_Error( 'class-wp-bootstrap-navwalker-missing', __( 'It appears the class-wp-bootstrap-navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
-} else {
-    require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
-}
+
+
+
+// FORMATAÇÃO MENU
+require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
 
 
 
@@ -26,11 +21,6 @@ register_nav_menus( array(
 
 
 
-
-
-
-// FORMULARIO DE CONTATO
-require_once __DIR__ . '/inc/contact-comercial.php';
 
 
 
@@ -70,7 +60,6 @@ add_filter( 'show_admin_bar' , 'my_function_admin_bar');
 //ADD FOLHAS DE ESTILOS
 function add_styles() {
     wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css');
-    // wp_enqueue_style( 'aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css');
     wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css');
 }
 add_action( 'wp_enqueue_scripts', 'add_styles' );
@@ -89,10 +78,7 @@ add_action('wp_enqueue_scripts', 'register_jquery');
 
 //ADD JAVASCRIPTS
 function add_scripts() {
-    wp_enqueue_script( 'jquery-migrate', 'https://code.jquery.com/jquery-migrate-1.2.1.min.js', true);
-    wp_enqueue_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', true);
-    // wp_enqueue_script( 'aos', 'https://unpkg.com/aos@2.3.1/dist/aos.js', true);
-    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', true);
+    wp_enqueue_script( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js', true);
     wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/slick.min.js', true);
     wp_enqueue_script( 'site', get_template_directory_uri() . '/assets/js/app.js', true);
 

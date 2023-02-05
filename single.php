@@ -39,30 +39,15 @@
                                             }
                                         </script>
                                         <div class="icons-box">
-                                            <a href="javascript:abrirPop('https://www.facebook.com/dialog/share?href=<?php the_permalink(); ?>&app_id=844815932679017');" class="mr-4"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/icon-facebook.png" class="icons"></a>
-                                            <a href="javascript:abrirPop('https://twitter.com/intent/tweet?text=<?php the_title(); ?>&url=<?php the_permalink(); ?>');" class="mr-4"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/icon-twitter.png" class="icons"></a>
-                                            <a href="javascript:abrirPop('https://api.whatsapp.com/send?text=<?php the_title(); ?> - <?php the_permalink(); ?>');" class="mr-0"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/icon-whatsapp.png" class="icons"></a>
+                                            <a href="javascript:abrirPop('https://www.facebook.com/dialog/share?href=<?php the_permalink(); ?>&app_id=844815932679017');" class="me-4"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/icon-facebook.png" class="icons"></a>
+                                            <a href="javascript:abrirPop('https://twitter.com/intent/tweet?text=<?php the_title(); ?>&url=<?php the_permalink(); ?>');" class="me-4"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/icon-twitter.png" class="icons"></a>
+                                            <a href="javascript:abrirPop('https://api.whatsapp.com/send?text=<?php the_title(); ?> - <?php the_permalink(); ?>');" class="me-0"><img src="<?php bloginfo( 'template_url' ) ?>/assets/img/icon-whatsapp.png" class="icons"></a>
                                         </div>
                                     </div>
                                     
                                 </div>
 
                                 <div class="single-container">
-
-                                    <?php
-                                        if( is_single() && 'cronicas' == get_post_type() ) :
-                                    ?>
-                                        <div class="card box-shadow mb-5 mt-2">
-                                            <div class="card-body">
-                                                <blockquote class="blockquote mt-0 mb-0">
-                                                    <?php echo get_post_meta( $post->ID , 'cronicas_autor', true );?>
-                                                    <div class="blockquote-footer">
-                                                        <?php echo get_post_meta( $post->ID , 'cronicas_descricao', true );?>
-                                                    </div>
-                                                </blockquote>
-                                            </div>
-                                        </div>
-                                    <?php endif;?>
 
                                     <?php
                                         if ( has_post_thumbnail() ) { 
@@ -72,20 +57,40 @@
                                         }
                                     ?>
 
-                                    <p><?php the_content(); ?></p>
+                                    <?php
+                                        if( is_single() && 'cronicas' == get_post_type() ) :
+                                    ?>
+
+                                        <div class="card box-shadow mb-5">
+                                            <div class="card-body avatar">                
+                                                <h5 class="card-title">
+                                                    <?php echo get_post_meta( $post->ID , 'cronicas_autor', true );?>
+                                                </h5>
+                                                <p class="card-text">
+                                                    <?php echo get_post_meta( $post->ID , 'cronicas_descricao', true );?>
+                                                </p>                                           
+                                            </div>
+                                        </div>
+
+
+                                    <?php endif;?>
+
+                                    <p>
+                                        <?php the_content(); ?>
+                                    </p>
 
                                     <?php if ( has_category( array( 'blog', 'voz-da-bancada' ) ) ) : ?>
-                                        <div class="card box-shadow mt-5 mb-5">
+                                        <div class="card box-shadow mt-5">
                                             <div class="card-body avatar">
                                                 <div class="row d-flex align-items-center">
                                                     <div class="col-md-2">
                                                         <img src="<?php echo get_avatar_url(get_the_author_meta('ID')); ?>" alt="">
                                                     </div>
                                                     <div class="col-md-10">
-                                                        <strong>
+                                                        <h5 class="card-title">
                                                             <?php echo get_the_author_meta('first_name').' '.get_the_author_meta('last_name'); ?>
-                                                        </strong>
-                                                        <p>
+                                                        </h5>
+                                                        <p class="card-text">
                                                             <?php echo get_the_author_meta('description'); ?>
                                                         </p>
                                                     </div>

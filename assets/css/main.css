@@ -11251,23 +11251,20 @@ blockquote p {
   }
 }
 #achievements {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 #achievements img {
   max-height: 300px;
 }
 
 @media (max-width: 991px) {
-  #achievements {
-    margin-bottom: 30px;
-  }
   #achievements .card-achievements {
     margin-bottom: 30px;
   }
 }
 #blog {
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 #blog .card {
   margin-left: 50px;
@@ -11301,7 +11298,7 @@ blockquote p {
 @media (max-width: 991px) {
   #blog {
     margin-top: 0px;
-    margin-bottom: 35px;
+    margin-bottom: 0px;
   }
   #blog .card {
     margin-left: 0;
@@ -11329,7 +11326,7 @@ blockquote p {
   }
 }
 #coachs {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   background: #fff;
 }
 #coachs .diretoria-title {
@@ -11395,7 +11392,7 @@ blockquote p {
   }
 }
 #curiosities {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   background-color: #fafafa;
 }
 #curiosities .masonry {
@@ -11412,7 +11409,7 @@ blockquote p {
 
 @media (max-width: 991px) {
   #curiosities {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
   #curiosities .masonry {
     column-count: 1;
@@ -12180,7 +12177,7 @@ header {
 }
 #matches {
   background-color: #fafafa;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 #matches .card {
   width: 100%;
@@ -12243,7 +12240,7 @@ header {
 
 @media (max-width: 991px) {
   #matches {
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
   #matches .card .card-body {
     padding: 0.75rem;
@@ -12285,17 +12282,17 @@ header {
   line-height: 1.15rem;
   display: block;
 }
-.navbar .navbar-nav .nav-item {
+.navbar .navbar-nav .menu-item {
   margin: 0 0.95rem;
   padding: 0;
 }
-.navbar .navbar-nav .nav-item:first-child {
+.navbar .navbar-nav .menu-item:first-child {
   margin-left: 0;
 }
-.navbar .navbar-nav .nav-item:last-child {
+.navbar .navbar-nav .menu-item:last-child {
   margin-right: 0;
 }
-.navbar .navbar-nav .nav-item .nav-link {
+.navbar .navbar-nav .menu-item .nav-link {
   color: #fff;
   font-size: 1rem;
   text-transform: uppercase;
@@ -12304,12 +12301,11 @@ header {
   margin: 0 !important;
   letter-spacing: -0.05em;
 }
-.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link:focus {
+.navbar .navbar-nav .menu-item .nav-link:hover, .navbar .navbar-nav .menu-item .nav-link:focus {
   color: #CEBA3C !important;
 }
-.navbar .navbar-nav .active .nav-link {
-  font-family: "MarkBold", sans-serif;
-  color: #CEBA3C !important;
+.navbar .navbar-nav .menu-item .active {
+  color: #CEBA3C;
 }
 
 .scrolled {
@@ -12478,7 +12474,7 @@ header {
   }
 }
 #page {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 #page h1, #page .h1, #page h2, #page .h2, #page h3, #page .h3, #page h4, #page .h4, #page h5, #page .h5, #page h6, #page .h6 {
   font-weight: 700;
@@ -12489,7 +12485,7 @@ header {
 
 @media (max-width: 991px) {
   #page {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   #page h2, #page .h2, #page h3, #page .h3, #page h4, #page .h4, #page h5, #page .h5, #page h6, #page .h6 {
     margin: 15px 0;
@@ -12500,7 +12496,7 @@ header {
   }
 }
 #photos {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 #photos h1, #photos .h1, #photos h2, #photos .h2, #photos h3, #photos .h3, #photos h4, #photos .h4, #photos h5, #photos .h5, #photos h6, #photos .h6 {
   font-weight: 700;
@@ -12510,11 +12506,11 @@ header {
 
 @media (max-width: 991px) {
   #photos {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
 #player {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   background: #fff;
 }
 #player .player-big {
@@ -12556,7 +12552,7 @@ header {
   }
 }
 #players {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   background: #fff;
 }
 #players .position-title {
@@ -12678,7 +12674,7 @@ header {
   }
 }
 #stars {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   background-color: #fafafa;
 }
 #stars .masonry {
@@ -12707,14 +12703,14 @@ header {
 
 @media (max-width: 991px) {
   #stars {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
   #stars .masonry {
     column-count: 1;
   }
 }
 #symbols {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 #symbols img {
   width: auto;
@@ -12784,7 +12780,7 @@ header {
 
 @media (max-width: 991px) {
   #symbols {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   #symbols .main-container {
     max-width: auto;

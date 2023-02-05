@@ -8,7 +8,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-12 -mb">
+                    <div class="col-md-12">
                         
                         <?php 
                             $paged = get_query_var('paged') ? get_query_var('paged') : 1;

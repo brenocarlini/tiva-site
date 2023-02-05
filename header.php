@@ -107,16 +107,18 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                         <?php
-                            wp_nav_menu( array(
+                            wp_nav_menu(array(
                                 'theme_location'  => 'primary',
                                 'container'       => false,
                                 'container_id'    => 'navbarSupportedContent',
                                 'container_class' => 'collapse navbar-collapse',
                                 'menu_id'         => false,
-                                'menu_class'      => 'navbar-nav ms-auto',
-                                'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                                'walker'          => new WP_Bootstrap_Navwalker(),
-                            ) );
+                                // 'menu_class'      => 'navbar-nav ms-auto',
+                                'fallback_cb'     => '__return_false',
+                                'items_wrap'      => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+                                'depth'           => 2,
+                                'walker'          => new bootstrap_5_wp_nav_menu_walker()
+                            ));
                         ?>
 
                         
